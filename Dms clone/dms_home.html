@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMS</title>
+    <link rel="stylesheet" href="./dms.css">
+    <link rel=" shortcut icon" href="hnet.com-image.ico">
+    <link rel="icon" href="hnet.com-image.ico">
+</head>
+<body>
+    <header>
+        <a href="#" class="head-logo">
+            <img src="./dms-logo.png" alt="">
+            <p>DMS</p>
+        </a>
+        <ul class="buttons-list">
+            <li>신청화면</li>
+            <li>공지사항</li>
+            <li>부가기능</li>
+            <button id="login-button" onclick="modalClickHandler()">로그인</button>
+        </ul>
+
+    </header>
+    <!-- 로그인 모달창 -->
+    <div class="login-modal" id="login-modal" onclick="modalClose()">
+        <div class="login-wrapper" id="login-wrapper">
+            <img src="./x.png" alt="" id="x">
+        </div>
+    </div>
+    <section>
+            <div class="menu">
+                <div class="menu-left">
+                    <div class="meal-title">
+                        <p class="menu-title">오늘의 메뉴</p>
+                        <p class="menu-date">##월##일##요일</p>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-lists" id="breakfast">
+                            <ul>
+                                <li>밥</li>
+                                <li>국</li>
+                            </ul>
+                        </div>
+                        <div class="menu-lists">
+                            <ul>
+                                <li>밥</li>
+                                <li>반찬</li>
+                            </ul>
+                        </div>
+                        <div class="menu-lists">
+                            <ul>
+                                <li>반찬</li>
+                                <li>국</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-buttons">
+                        <button>이전</button>
+                        <button>다음</button>
+                    </div>
+                </div>
+                <img src="./meal-man.59f237e2.png" alt="">
+            </div>
+            <div class="apply">
+
+            </div>
+            <div class="notice">
+
+            </div>
+            <div class="plus">
+
+            </div>
+    </section>
+    <footer>
+
+    </footer>
+    
+    <script src="./dms.js"></script>
+</body>
+</html>
