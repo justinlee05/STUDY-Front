@@ -5,78 +5,298 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMS</title>
-    <link rel="stylesheet" href="./dms.css">
+    <link rel="stylesheet" href="./dms-menu.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="dms-apply.css">
+    <link rel="stylesheet" href="./dms-notice.css">
+    <link rel="stylesheet" href="./dms-plus.css">
+    <link rel="stylesheet" href="./dms-footer.css">
     <link rel=" shortcut icon" href="hnet.com-image.ico">
     <link rel="icon" href="hnet.com-image.ico">
 </head>
-<body>
-    <header>
-        <a href="#" class="head-logo">
-            <img src="./dms-logo.png" alt="">
-            <p>DMS</p>
-        </a>
-        <ul class="buttons-list">
-            <li>신청화면</li>
-            <li>공지사항</li>
-            <li>부가기능</li>
-            <button id="login-button" onclick="modalClickHandler()">로그인</button>
-        </ul>
-
-    </header>
+<body id="body_">
     <!-- 로그인 모달창 -->
-    <div class="login-modal" id="login-modal" onclick="modalClose()">
-        <div class="login-wrapper" id="login-wrapper">
-            <img src="./x.png" alt="" id="x">
-        </div>
-    </div>
-    <section>
-            <div class="menu">
-                <div class="menu-left">
-                    <div class="meal-title">
-                        <p class="menu-title">오늘의 메뉴</p>
-                        <p class="menu-date">##월##일##요일</p>
-                    </div>
-                    <div class="menu-section">
-                        <div class="menu-lists" id="breakfast">
-                            <ul>
-                                <li>밥</li>
-                                <li>국</li>
-                            </ul>
-                        </div>
-                        <div class="menu-lists">
-                            <ul>
-                                <li>밥</li>
-                                <li>반찬</li>
-                            </ul>
-                        </div>
-                        <div class="menu-lists">
-                            <ul>
-                                <li>반찬</li>
-                                <li>국</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu-buttons">
-                        <button>이전</button>
-                        <button>다음</button>
+        <div class="login-modal" id="login-modal" onclick="modalClose()">
+            <div class="login-wrapper" id="login-wrapper">
+                <div class="login-header">
+                    <img src="./assets/x.png" alt="" id="x">
+                    <div class="login-img">
+                        <img src="./assets/login.png" alt="">
+                        <span>로그인</span>
                     </div>
                 </div>
-                <img src="./meal-man.59f237e2.png" alt="">
+                <div class="login-insert">
+                    <ul>
+                        <input class="login-inserts" type="text" placeholder="   아이디">
+                        <input class="login-inserts" type="text" placeholder="   비밀번호">
+                        <button>로그인</button>
+                        <div class="login-bottom">
+                            <div class="login-bottom-detail">
+                                <input type="checkbox">
+                                <span>자동 로그인</span>
+                            </div>
+                            <a href="#">비밀번호를 잊으셨나요?</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="login-footer">
+                    <span>아직 DMS 회원이 아니시라면?</span>
+                    <a href="#">회원가입</a>
+                </div>
             </div>
-            <div class="apply">
+        </div>
+    <div class="container-menu">
+        <header>
+            <a href="#" class="head-logo">
+                <img src="./assets/dms-logo.png" alt="">
+                <p>DMS</p>
+            </a>
+            <ul class="buttons-list">
+                <li>신청화면</li>
+                <li>공지사항</li>
+                <li>부가기능</li>
+                <button id="login-button" onclick="modalClickHandler()">로그인</button>
+            </ul>
 
+        </header>
+        
+        <section>
+            <div class="menu-big">
+                <div class="menu">
+                    <div class="menu-left">
+                        <div class="meal-title">
+                            <p class="menu-title">오늘의 메뉴</p>
+                            <p class="menu-date" id="menu-date"></p>
+                        </div>
+                        <div class="menu-section">
+                            <div class="menu-lists">
+                                <span>아침</span>
+                                <div class="menu-detail">
+                                    <ul id="breakfast">
+                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="menu-lists">
+                                <span>점심</span>
+                                <div class="menu-detail">
+                                    <ul id="lunch">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="menu-lists">
+                                <span>저녁</span>
+                                <div class="menu-detail">
+                                    <ul id="dinner">
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-buttons">
+                            <button onclick="DateBefore()">이전</button>
+                            <button onclick="DateAfter()">다음</button>
+                        </div>
+                    </div>
+                    <img src="./assets/meal-man.59f237e2.png" alt="">
+                </div>
             </div>
-            <div class="notice">
-
+                
+        </section>
+    </div>
+    <div class="apply" id="apply">
+        <img class="background-img" id="back-1" src="./assets/app-background1.jpg" alt="">
+        <img class="background-img" id="back-2" src="./assets/app-background2.jpg" alt="">
+        <img class="background-img" id="back-3" src="./assets/app-background3.jpg" alt="">
+        <img class="background-img" id="back-4" src="./assets/app-background4.jpg" alt="">
+        <div class="container-apply">
+            
+            <div class="apply-header">
+                <span id="apply-header-top">신청화면</span>
+                <span>기숙사 생활에 관련된 편의 기능을 이용해보세요.</span>
             </div>
-            <div class="plus">
-
+            <div class="apply-section">
+                <div onmouseover="onMouse1()" onmouseout="outMouse1()" id="apply1" class="applies">
+                    <img id="apply-imgs" class="apply-imgs" src="./assets/apply1.png" alt="">
+                    <img src="./assets/apply1-icon.png" alt="">
+                    <div>
+                        <p>연장학습신청</p>
+                        <span class="sp-top">추가 연장학습이 필요한 경우</span>
+                        <span>연장 학습을 신청해보세요.</span>
+                    </div>
+                    <button>신청하기</button>
+                </div>
+                <div onmouseover="onMouse2()" onmouseout="outMouse2()" id="apply2" class="applies">
+                    <img id="apply-img2" class="apply-imgs" src="./assets/apply2.png" alt="">
+                    <img src="./assets/apply2-icon.png" alt="">
+                    <div>
+                        <p>외출신청</p>
+                        <span class="sp-top">주말 기숙사 외출이 필요한 경우</span>
+                        <span>토요,일요 외출을 신청해보세요.</span>
+                    </div>
+                    <button>신청하기</button>
+                </div>
+                <div onmouseover="onMouse3()" onmouseout="outMouse3()" id="apply3" class="applies">
+                    <img id="apply-img3" class="apply-imgs" src="./assets/apply3.png" alt="">
+                    <img src="./assets/apply3-icon.png" alt="">
+                    <div>
+                        <p>잔류신청</p>
+                        <span class="sp-top">주말 기숙사 잔류여부를 확인하고</span>
+                        <span>잔류 또는 귀가를 신청해보세요.</span>
+                    </div>
+                    <button>신청하기</button>
+                </div>
+                <div onmouseover="onMouse4()" onmouseout="outMouse4()" id="apply4" class="applies">
+                    <img id="apply-img4" class="apply-imgs" src="./assets/apply4.png" alt="">
+                    <img src="./assets/apply4-icon.png" alt="">
+                    <div>
+                        <p>기상음악신청</p>
+                        <span class="sp-top">월요일부터 금요일까지 방송할</span>
+                        <span>기상 알람음악을 신청해보세요.</span>
+                    </div>
+                    <button>신청하기</button>
+                </div>
             </div>
-    </section>
+            <div class="apply-footer">
+            
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="notice">
+        
+        <div id="container-notice">
+            
+            <div class="header-notice">
+                <div class="headers-notice">
+                    <span class="header-notice-detail">DMS 기숙사 안내사항</span>
+                    <p class="header-notice-detail">대덕소프트웨어마이스터고등학교 사감부에서 작성한 안내사항을 열람하세요.</p>
+                </div>
+            </div>
+            <div class="body-notice">
+                <div class="card-notice">
+                    <div id="notice-left">
+                        <span class="notice-text">공지사항</span>
+                        <p class="notice-text">사감부에서 공지된 사항을 확인하세요.</p>
+                    </div>
+                    <div id="notice-right">
+                        <span class="notice-text">기숙사 규정</span>
+                        <p class="notice-text">사감부에서 제정한 규정을 확인하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container-background-notice">
+            <img src="./assets/notice-left.png" alt="" class="background-notice" >
+            
+            <img src="./assets/notice-right.png" alt="" class="background-notice" >
+            
+        </div>
+    </div>
+    <div class="plus">
+        <img id="detail-background" src="./assets/detail-background.png" alt="">
+        <div class="container-plus">
+            <div id="header-plus">
+                <span>부가기능</span>
+                <p>기숙사 생활에 관련된 부가 기능을 사용해보세요.</p>
+            </div>
+            <div id="body-plus">
+                <div class="plus-choice">
+                    <div>
+                        <img src="./assets/detail-button1.jpg" alt="#">
+                    </div>
+                    <span>설문조사</span>
+                </div>
+                <div class="plus-choice">
+                    <div>
+                        <img src="./assets/detail-button2.jpg" alt="#">
+                    </div>
+                    <span>버그신고</span>
+                </div>
+                <div class="plus-choice">
+                    <div>
+                        <img src="./assets/detail-button3.jpg" alt="#">
+                    </div>
+                    <span>시설물 고장 신고</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-
+        <div class="container-footer">
+            <div class="footer-head">
+                <div>
+                    <span>Frontend</span>
+                    <ul>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Android</span>
+                    <ul>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Design</span>
+                    <ul>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Windows&CS</span>
+                    <ul>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>IOS</span>
+                    <ul>
+                        <li>이경수</li>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Server</span>
+                    <ul>
+                        <li>이경수</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-foot">
+                <div class="foot-left">
+                    <img id="footer-logo" src="./assets/login.png" alt="">
+                    <span>2021 Team DMS</span>
+                </div>
+                <div class="foot-right">
+                    <a href="https://www.facebook.com/DMSforDSM">
+                        <img src="./assets/facebook.png" alt="">
+                    </a>
+                    <a href="https://github.com/dsm-DMS/">
+                        <img src="./assets/github.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
     
     <script src="./dms.js"></script>
+    <script src="./api.js"></script>
 </body>
 </html>
