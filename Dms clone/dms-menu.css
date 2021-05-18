@@ -11,14 +11,14 @@ body{
 }
 
 header {
-    border: 2px solid black;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #10a3a4;
     color: white;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 
 header button {
@@ -51,7 +51,7 @@ header button:hover {
 .buttons-list{
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
+    
     width: 40%;
     font-weight: bold;
     height: 100px;
@@ -82,19 +82,22 @@ header ul li{
     justify-content: space-around;
 }
 
-header img{
-    border: 2px solid red;
-
-}
 
 section{
-    border: 2px solid red;
-    width: 80%;
+    
+    width: 100%;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-big{
+    width: 100%;
 }
 
 .menu {
-    border: 2px solid black;
+    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -103,7 +106,7 @@ section{
     background-color: #10a3a4;
     color: white;
     padding-top: 5%;
-    height: 650px;
+    height: 700px;
     
 }
 
@@ -112,9 +115,9 @@ section{
 .menu-left{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    height: 530px;
-    width: 50%;
+    
+    height: 700px;
+    width: 70%;
 }
 
 .meal-title{
@@ -125,7 +128,7 @@ section{
     flex-direction: column;
     height: 100px;
     width: 500px;
-    border: 2px solid black
+    
 }
 
 .meal-title{
@@ -147,10 +150,12 @@ section{
 }
 
 .menu-section{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top:7%;
+    height: 350px;
 }
 
 .menu-lists:hover{
@@ -161,30 +166,67 @@ section{
 }
 
 .menu-lists{
-    border: 2px solid black;
+    transition: 0.5s;
     width: 30%;
     height: 300px;
     background-color: #0c9799;
     border-radius: 15px;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-lists span{
+    height: 0%;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .menu-lists ul {
     list-style: none;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
 }
 
 .menu-lists ul li{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
+}
+
+.menu-lists:hover span{
+   height: auto;
+    opacity: 1;
+    transition:1s;
+
+    
+}
+
+.menu-detail{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%;
+    font-weight: 600;
+}
+
+.menu-detail ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .menu-buttons{
     padding: 2%;
-    border: 2px solid black;
+    
     width: 40%;
     align-items: center;
     justify-content: space-between;
@@ -203,20 +245,13 @@ section{
     
 }
 
-.login-modal{
-    width: 100%;
-    height: 100vh;
-    background-color: #00000045;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    display: none;
+
+.container-menu {
+    width: 80%;
+
+    margin: 0 auto ;
 }
 
-.login-wrapper{
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    border-radius: 10px;
-    
+.menu-date{
+    font-weight: 500;
 }

@@ -1,0 +1,192 @@
+.notice{
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-notice{
+    display: flex;
+    
+    height: 700px;
+
+    width: 80%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.background-notice{
+    width: 20%;
+    
+}
+
+#container-background-notice{
+
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 490px;
+    padding-top: 210px;
+    left: 10%;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.header-notice{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    height: 150px;
+}
+
+.header-notice span{
+    font-size: 25px;
+    color: #19b6b6;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.header-notice p{
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    
+}
+
+.header-notice-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.body-notice{
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headers-notice{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.card-notice{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    z-index: 1;
+       
+}
+
+
+#notice-left{
+
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/notice-button-left.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    opacity: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.card-notice p{
+    /* display: none; */
+    padding-top: 360px;
+    font-size: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.card-notice div{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+#notice-left:hover p{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+#notice-left:hover span{
+    padding-top: 320px;
+    transition: 0.5s;
+
+}
+#notice-left:hover{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+#notice-right:hover p{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+#notice-right:hover span{
+    padding-top: 320px;
+    transition: 0.5s;
+
+}
+#notice-right:hover{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+
+.notice-text{
+    padding-top: 350px;
+    padding-left: 30px;
+    transition: 0.5s;
+
+}
+
+#notice-right{
+
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/notice-button-right.jpg);
+    background-size:cover;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    
+}
