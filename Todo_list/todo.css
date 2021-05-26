@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+
+body{
+
+    
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 142);
+}
+
+.input-wrapper span{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    background-color: rgb(255, 255, 142);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.input button{
+    width: 404px;
+    height: 40px;
+    transition: .5s;
+    color: black;
+    background-color: greenyellow;
+    
+}
+
+.input button:hover{
+    background-color :rgb(167, 192, 130);
+    font-size: 20px;
+}
+
+.input input{
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    background-color: white;
+
+}
+
+.list-wrapper .lists{
+    border: 2px solid black;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 10px;
+    height: 40px;
+    align-items: center;
+    background-color: white;
+}
+
+.list-wrapper button{
+    width: 7%;
+    height: 100%;
+    background-color: rgb(104, 104, 104);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+
+}
+
+.list-wrapper p{
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.lists .check{
+
+    background-color: white;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lists input {
+
+    width: 40px;
+    height: 40px;
+}
+
+.hide{
+    position: absolute;
+    border: 2px solid;
+    width: 95%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hide input{
+    width: 90%;
+}
+
+.hide button{
+    width: 10%;
+    height: 45px;
+}
+body{
+    overflow:hidden;
+}
+
+#fix-modal{
+    
+    border: 2px solid;
+    display: none;
+    height: 750px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(121, 121, 121, 0.623);
+    position: absolute;
+
+}
+
+#fix-modal-background{
+border: 2px solid;
+}
+
+#fix-modal-small{
+    margin-top: 150px;
+    border: 2px solid;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#fix-modal-input{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    background-color: lightgray;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#fix-modal-small span{
+    font-size: 50px;
+    background-color: white;
+
+}
+
+#fix-modal-buttons{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: center;
+
+}
+
+#fix-modal-buttons button{
+    width: 40%;
+    margin: 10px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fix-modal">
+        
+            <div id="fix-modal-small">
+                <span>수정</span>
+                <input id="fix-modal-input" type="text">
+                <div id="fix-modal-buttons">
+                    <button onclick="Fixend(event)">완료</button>
+                    <button>취소</button>
+                </div>
+            </div>
+               
+    </div>
+    <header>
+        
+        <div class="input-wrapper">
+            <span>To Do List</span>
+            <div class="input">
+                <input type="text" id="insert">
+                <button id="add" >추가</button>
+            </div>
+            
+        </div>
+    </header>
+    <section>
+        <div class="list-wrapper" id="input">
+        </div>
+    </section>
+    <script src="./todo.js"></script>
+</body>
+</html>
