@@ -8,6 +8,7 @@ const todo = {
     hide : document.getElementById('fix-modal'),
     input_fix : document.getElementById('fix-modal-input'),
     test : document.getElementsByClassName('text'),
+    
     fixtarget : document.getElementsByClassName('fix')
 }
 
