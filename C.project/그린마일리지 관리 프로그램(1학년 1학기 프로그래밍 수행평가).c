@@ -9,6 +9,10 @@ struct GM {
 }manage[21];
 char tempname[10];
 int i = 1, temp1, tempnum;
+int PrintResult(int num) {
+	printf("%d번 정보 :\n이름 : %s\n번호 : %d\n점수 : %d\n", num, manage[num].name, manage[num].num, manage[num].score);
+	return 0;
+}
 void Wrong() {
 	system("cls");
 	getchar();
@@ -208,10 +212,6 @@ void Print() {
 			continue;
 		}
 	}
-}
-int PrintResult(int num) {
-	printf("%d번 정보 :\n이름 : %s\n번호 : %d\n점수 : %d\n", num, manage[num].name, manage[num].num, manage[num].score);
-	return 0;
 }
 void Start() {
 	while (1) {
