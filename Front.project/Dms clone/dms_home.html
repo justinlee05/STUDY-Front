@@ -5,23 +5,1028 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMS</title>
-    <link rel="stylesheet" href="./dms-menu.css">
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="dms-apply.css">
-    <link rel="stylesheet" href="./dms-notice.css">
-    <link rel="stylesheet" href="./dms-plus.css">
-    <link rel="stylesheet" href="./dms-footer.css">
-    <link rel=" shortcut icon" href="hnet.com-image.ico">
-    <link rel="icon" href="hnet.com-image.ico">
+<link rel=" shortcut icon" href="https://lh3.googleusercontent.com/ziYkOI8nO7_MU8JNEh8NQB8kTF_Pl0U9rJnOrhROCJ36GsuoiEVm1DXqKQr-DAsa-zSP3WGVjSxJTGaLfRNpCMWIDs5AexWGmLmVngYOl2CGhHVPcJxm7PNX_wq7tYaXXI1ZdgOVutcqqCkkswFOouhLAueEuAL0naZVcRSe1VjFU-2GSrwE6QTm7OHvp_H0EH8vIA911KRfNPAmZXGIKtPFLHgdDEPoTc_LrIdrvSBs0ZJDDx77QXbMxX4sFYrJKO5Ad9xrWtYX4So-2_eeEnYliKXISEcG1wxDzUeiy8_FOIQGrxc9zaDHbp1UnLegOXt66hSFOViByzM34lefaGdXPZVqVJBLu1ksouXTrHe21Htduhz7G2Cnju1CevHrAVk1RP1i6l8PYTNImEVXT9TCD4sjV6KcalippWHk-caD4ZRM3uZbPJK6MgrBefkvlO_AEn6lsADnI6Udj-2b_e654vwXnFXR3SWVrI1JxvsA14mE89VMGPdv_xEV4tkhx23VRHOABPNTwPI8qMhhRc9Yq0YwBqAyEnAguCQVMUA-nZi0PaJOklIbqCIx8vy15-GDi125fg2qTqKlQU5LTEAR9B8prQb8mMZieq-UF-Gd6E-rklSh5v4dU3i8wdFbmseJmkzG4NjJ3nc3pJq0l3v656ZyofF3RJ4i8A_ZaktpzTBGzhwrW9iGJqmQ6w5lfHcGH6RpNmcLXrIQYiFV9xY=w36-h37-no?authuser=1">
+ <style>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #10a3a4;
+}
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #10a3a4;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header button {
+    border: none;
+    outline: none;
+}
+
+header button:hover {
+    box-shadow: none;
+    transition: 1s;
+
+}
+
+.head-logo{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 1.875rem;
+    font-family: NanumSquareEB;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.head-logo p{
+    padding-left: 35%;
+}
+
+.buttons-list{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 40%;
+    font-weight: bold;
+    height: 100px;
+    align-items: center;
+    
+}
+
+.buttons-list button{
+    width: 25%;
+    height: 50%;
+    background-color: #19b6b6;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+
+}
+
+header ul li{
+    justify-content: space-around;
+}
+
+
+section{
+    
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-big{
+    width: 100%;
+}
+
+.menu {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10a3a4;
+    color: white;
+    padding-top: 5%;
+    height: 700px;
+    
+}
+
+.menu img{
+width : 40%
+}
+
+.menu-left{
+    display: flex;
+    flex-direction: column;
+    
+    height: 700px;
+    width: 70%;
+}
+
+.meal-title{
+    justify-content: flex-start;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 500px;
+    
+}
+
+.meal-title{
+    justify-content: space-between;
+}
+
+.menu-title{
+    font-weight: bolder;
+    color:white;
+    font-size: 40px;
+    width: 100%;
+    
+}
+
+.menu-date{
+    font-size:20px;
+    color:hsla(0,0%,100%,.7);
+    width: 100%;
+}
+
+.menu-section{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top:7%;
+    height: 350px;
+    align-items : flex-end;
+}
+
+.menu-lists:hover{
+    width: 35%;
+    height: 350px;
+    transition: 0.5s;
+
+}
+
+.menu-lists{
+    transition: 0.5s;
+    width: 30%;
+    height: 300px;
+    background-color: #0c9799;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-lists span{
+    height: 0%;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-lists ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.menu-lists ul li{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-lists:hover span{
+   height: auto;
+    opacity: 1;
+    transition:1s;
+
+    
+}
+
+.menu-detail{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%;
+    font-weight: 600;
+}
+
+.menu-detail ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-buttons{
+    padding: 2%;
+    
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.menu-buttons button{
+    width: 125px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    
+    
+}
+
+
+.container-menu {
+    width: 80%;
+
+    margin: 0 auto ;
+}
+
+.menu-date{
+    font-weight: 500;
+}
+ .apply{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+background-size: 100% 100%;
+
+}
+
+.background-img{
+    position: absolute;
+    height: 750px;
+    display: flex;
+opacity:0;
+transition : 0.5s;
+width : 100%;
+
+}
+#apply1:hover #back-1{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.container-apply{
+    width: 80%;
+    height: 750px;
+z-index : 3;
+
+}
+
+.container-apply::after{
+    opacity: 0.5;
+}
+
+
+.apply-header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: 30px;
+}
+
+.apply-header span{
+    font-size: 10px;
+    color: gray;
+}
+
+#apply-header-top{
+    font-size: 25px;
+    color: #19b6b6;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.apply-section{
+
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.applies{
+
+    width: 220px;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.5s;
+   
+}
+
+
+.apply-imgs{
+    transition: 0.5s;
+}
+
+#apply-imgs{
+    display: flex;
+    position: absolute;
+    top: 1050px;
+    width: 0px;
+    transition-property: opacity;
+    transition-duration: 0.5s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 0;
+
+}
+
+
+#apply1:hover #apply-imgs{
+    top: 1050px;
+    width: 200px;
+    transition-property: opacity;
+    transition-duration: 0.5s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 1;
+
+}
+
+#apply-img2{
+    position: absolute;
+    top: 1300px;
+    width: 90px;
+    display: flex;
+    transition: 0s;
+    opacity: 0;
+    left: 30%;
+
+}
+#apply2:hover #apply-img2{
+    left: 20%;
+    width: 90px;
+    transition-property: opacity;
+    transition-duration: 0.5s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 1;
+
+}
+#apply-img3{
+    position: absolute;
+    top: 1450px;
+    width: 0px;
+    display: flex;
+    opacity: 0;
+    left: 35%;
+    transition: 0s;
+}
+#apply3:hover #apply-img3{
+    left: 35%;
+    width: 200px;
+    transition-property: opacity;
+    transition-duration: 0.5s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 1;
+
+}
+#apply-img4{
+    position: absolute;
+    top: 1300px;
+    width: 0px;
+    display: flex;
+    transition: 0s;
+    opacity: 0;
+    right: 5%;
+}
+#apply4:hover #apply-img4{
+    right: 5%;
+    top: 1300px;
+    width: 120px;
+    transition-property: opacity;
+    transition-duration: 0.5s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 1;
+
+}
+
+.applies:hover{
+    background-color: #19b6b6;
+    color: white;
+    transition: 0.5s;
+    visibility:visible;
+}
+.applies:hover + .apply-imgs {
+    display: block;
+}
+
+.applies div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applies img:not(.apply-imgs){
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.applies p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sp-top{
+    margin-top:20px;
+    
+}
+
+.applies span{
+    font-size: 13px;
+}
+
+.applies button{
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer{
+    width: 80%;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-head{
+    width: 95%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin: 50px;
+    height: 250px;
+}
+
+.footer-head span{
+    font-size: 20px;
+
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+
+}
+
+
+
+.footer-head ul{
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    color: gray;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.footer-head li{
+    padding-bottom: 10px;
+}
+
+.footer-foot{
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-logo{
+    width: 40px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.footer-foot div{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-foot span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.foot-right img{
+    padding-left: 30px;
+}
+.notice{
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-notice{
+    display: flex;
+    
+    height: 700px;
+
+    width: 80%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.background-notice{
+    width: 20%;
+    
+}
+
+#container-background-notice{
+
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 490px;
+    padding-top: 210px;
+    left: 10%;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.header-notice{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    height: 150px;
+}
+
+.header-notice span{
+    font-size: 25px;
+    color: #19b6b6;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.header-notice p{
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    
+}
+
+.header-notice-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.body-notice{
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headers-notice{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.card-notice{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    z-index: 1;
+       
+}
+
+
+#notice-left{
+
+    width: 50%;
+    height: 100%;
+    background-image: url(https://lh3.googleusercontent.com/pw/ACtC-3fHFNFo9QmBC7o_9CWn8sX1vmFjyaf5KWyeXsRtLruQSbo6-KiOn044q4UcQvtQVlG4eIYaqcpZpB-8LKUQUEwo34m_kdORYUFg7ZQmTvRvBGLLZbASpdfHPOq-DEi2aVZPO_zVc8kyBILGZOd1xN-F=w400-h500-no?authuser=1);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    opacity: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.card-notice p{
+    /* display: none; */
+    padding-top: 360px;
+    font-size: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.card-notice div{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+#notice-left:hover p{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+#notice-left:hover span{
+    padding-top: 320px;
+    transition: 0.5s;
+
+}
+#notice-left:hover{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+#notice-right:hover p{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+#notice-right:hover span{
+    padding-top: 320px;
+    transition: 0.5s;
+
+}
+#notice-right:hover{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+
+.notice-text{
+    padding-top: 350px;
+    padding-left: 30px;
+    transition: 0.5s;
+
+}
+
+#notice-right{
+
+    width: 50%;
+    height: 100%;
+    background-image: url(https://lh3.googleusercontent.com/pw/ACtC-3fPazQr6CzXE8A5vvBGyQbgnxWBxSP0LtBd05mzvzq-97YxcGaCZgAO10jRrlbX42Siq8OJr7ZwBXaPEo_tqmtuXQyuJ7YwxuYDUNfFKQAzw1EW6W2esUSXcwEGNXOTyP2Wo22I_RsEIAdkYN9uFMls=w400-h500-no?authuser=1);
+    background-size:cover;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    
+}
+.plus{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.container-plus{
+    width: 80%;
+    display: flex;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-plus{
+    width: 100%;
+    height: 150px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-plus span{
+    font-size: 25px;
+    color: #19b6b6;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#header-plus p{
+    font-size: 10px;
+    color: gray;
+}
+
+
+
+#detail-background{
+    position: absolute;
+    width: 90%;
+    height: 760px;
+    padding-top: 40px;
+
+}
+
+#body-plus{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.plus-choice{
+    z-index: 1;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plus-choice div{
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.plus-choice img{
+    transition: .5s;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+.plus-choice span{
+    font-size: 25px;
+    color: rgb(90, 88, 88);
+    padding-top: 50px;
+
+}
+
+.plus-choice img:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+
+.login-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: #0000002f;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.login-wrapper{
+    width: 400px;
+    height: 600px;
+    background-color: #f5f5f5;;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+.login-wrapper img{
+    width: 30px;
+    padding: 5%;
+    border-radius: 0%;
+    height: 30px;
+    
+    
+}
+
+
+
+.login-insert{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 410px;
+
+}
+
+.login-insert ul{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+
+.login-inserts{
+border: 4px solid lightgray;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+    
+}
+
+.login-header{
+    display: flex;
+    
+    width: 100%;
+}
+
+.login-img{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    height: 100px;
+    font-size: 25px;
+    color:#19b6b6;
+    font-weight: bold;
+    
+
+}
+
+.login-img img{
+    height: 80px;
+    width: 80px;
+}
+
+.login-insert button{
+    width: 310px;
+    height: 50px;
+    background-color: #19b6b6;;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.login-bottom{
+    
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content: space-between;
+    
+    
+}
+
+.login-bottom a{
+    text-decoration: none;
+    color: #19b6b6;
+    font-weight: bold;
+}
+
+.login-bottom-detail{
+    width: 40%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-footer{
+    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 13px;
+    
+
+}
+
+.login-footer a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #19b6b6;
+    font-weight: bold;
+
+}
+
+</style>
 </head>
 <body id="body_">
     <!-- 로그인 모달창 -->
         <div class="login-modal" id="login-modal" onclick="modalClose()">
             <div class="login-wrapper" id="login-wrapper">
                 <div class="login-header">
-                    <img src="./assets/x.png" alt="" id="x">
+                    <img src="https://lh3.googleusercontent.com/d78JGT0FSXTQybimT4J6RxWLH0sUdX4MvmU7J9G2tBHUuOeJivwoOe8t0u5rMg2QP6hb028BexvycUXPQS9gBqyupDJa3ZhuJWZ55cAzT7bWupkDr8o4PkMClvgx1Gcw0SyWvy5oAFxWPQYy13LBMrAYNt2tU9JngcKSntDIJZnD5y0AIfqztii9r-bMOzJfxIoJWVMqprlF5T_1rc9iCns2fYDI5yXMudoLX4-m839crOwytA7sxCb7zSyICRs6OhGJgiqo-4K5q1p7Fi8uhh6J2-x6aZBmt4PckC_J7F1Zyi2gPp2qZrcgexuoo7TmUwDG3Vp3BeVuQqf-52VbPuUMBEqoY_AvzwiziXoGTXxP8INfhS-6bvhcI9m1FaRr0BG4C2auMqDMAj9ngJW9tim-A10IkTSWRd6wNPfRRQjedJuE1Tm26Eb48q98s-RZlCorPOCI4E2F2yVXtT_5tSGVuTM32j4AKSnZ2bsNa2eSPCytKrt283weJh33j7fzIIC7bi1CF2oGxaxzfxScUWAa-l4EqI_0W82MGsvGGQLBg-CByxSriTgobNvdA6lnxo-U7h3GMoikOtVY5Gjja61W0yZ4wlkmWzcuFGvMvYCovGClV5Ld72Xtp81hNuIfcXu2Q8YE709ALYgiOshf0hJ4S-ui8ji2JKOnCcKPJJaBx6xBZgWBmFWQ56seJ_DLmd1Qi2-AHBlsVM-LIlPeDho=s512-no?authuser=1" alt="" id="x">
                     <div class="login-img">
-                        <img src="./assets/login.png" alt="">
+                        <img src="https://lh3.googleusercontent.com/8SUVMvFfC_nmW6vWfw-yR2vh4txEyzXtWLSi_uvLN7TGHWpAbXx2Fd8MA1lnuvc6Xu6rcEkRM9a_DMzPYjvkDgjwNvFkzX2yRKErCR-tXiSZqMPE4sxRxU2edNQXR9hgDh2hwSQEERNW-tXip6t6HOgiJG1vZifZtycDTfcYQMEHj9-wcKe5odsPC4bTTjveE5yLJnoeRU0tndE0WW85-iO5RAM5c7tnp6Qc7t0FI6zZ5Jj5YDEdrwbE-UVckgmXSUFvAB3hnX7IHizWeutMSdiR5wFPL1ps2j16H82Oh0RanbkhWByROie2ZVgDDXC1W2LQzj8cv9BvGAnQlyDdg0PiC5_gZHoRlzkmzZPwkhkdmi4KKMQMHm1vI0Ih2NNsWI06xk92nHR9Q9wi286hhM6NoHgrM91aFIRRV7Mem-qFAnKrGstmkhrUFNdG14gt400xOLG1EY5WVypeC4-BFOUDMvdEFUweWuFOLgRsPQl6zGPpTLBNwGMcMvCmKLG1jQ8po8Encz5qh8QGoBviJ9D0u8F5RPKZPMxdMGIWiPdINzFfY0M7p225jTQ7aer-1jB3EZwxrvkXDf_UuWQLnTd6RYpaqWtDhefKIswhymdAp-0vOvlNUJXfzMXoNgQqTBQwuKXVYw91y89Htq4_OG2ooK9NQUubrd91riKBWlEQcq-CPiEKCDtPH7LFBM4MpTPbG-h80YWq4CLDWDdzscs=s120-no?authuser=1" alt="">
                         <span>로그인</span>
                     </div>
                 </div>
@@ -48,7 +1053,7 @@
     <div class="container-menu">
         <header>
             <a href="#" class="head-logo">
-                <img src="./assets/dms-logo.png" alt="">
+                <img src="https://lh3.googleusercontent.com/xb8oeAXRFrX6w5SHAOIX1FQWeXN0GuvtGAGdhWXhvPVw8ySPKefzPQc1irEI6TYgcfcnJ7BBWsOopGIORQnoVvWvojEbyy2SPUOkCO1bLk8or71qqZDWNF4-Kwwvr6Zeac6V2FPICdgGhu2VXIcP1xT1RbvvesM_NodfSaZjzbmunqHr14w3rzHgQv9c8g4L_Av7e-oGYo64AluRW31IyjroBJylCX0TEST7T0Jpc0O-FhuxFJEiqXg8v0otjq98hDBJixCM8qwvpQWh3bo9dBZFwac2PYqBP_IY3hHMfdprC-0V3iH-mpKqQQtYiWyWVqaB8pP8NMKbd-_AGFDwdbVXwbTEkRJiRnyyexxubsoNrWb_XLJMeOLO1J97C0RpHllPOSyF7C4CS7E5wVOBqmYPeU1MD3NeSPwQ6tNEv3hCR1Q2W9XebZnsaAB6-V56qr--RbLI-DR8LwZqBXPkALyZKFz1ybAbwg7SR--X3oVPn1ZNBh4_jKkgmQnEtNwYppN17lV_diccEvVIcgMfbyiIvrC4gPOLwV5n6keECy40UZD2anzr6ikrU09nbqOH_8J_wAbKj_avfCQtDUdZDx8FG5X9RS7q97s7BDJuz8xRZyxTrk1gEqEaQiKAxvn1t_FoP3IH1oL61FwZiYDpbbHmFARweBw6PEhXaQhFoz3D0nts0FiIt9n5jKy8yllPokiuOxSszdnNBlaTITk8SJM=s55-no?authuser=1" alt="">
                 <p>DMS</p>
             </a>
             <ul class="buttons-list">
@@ -99,17 +1104,17 @@
                             <button onclick="DateAfter()">다음</button>
                         </div>
                     </div>
-                    <img src="./assets/meal-man.59f237e2.png" alt="">
+                    <img src="https://lh3.googleusercontent.com/yAlb2TCQPj6uca5u3-EHSPk4O-QRPOMxhAAL752Hy8rVRgTGRkkcpS6iM8tkN0exbt5gm5lwMdqNPEai9K0XgRTnooWwTjdsK8s0E5m9Zk8ZWBb8Jt2VtjIu2eGrm7hf_F8jRJakP3AyC4cMrVRbkbwFlDeqvTfulbtOrYA17nLoUMrJ9ikHz1aLEDSu1-UqntOwaiu4bVffSlBIqrcR0LvJZNTDMRqLuqZ5mvSsqekVyy6N_zBLY57m4U_So0QBgRJq_b9YEGbXHeIEMXUEpXKNHwwVh48y98MpEbUJYWVvx9K8s54UHocC1z7diZ0QCgD572zIsFfEpToPnhAThzw96PQ2bAMWW9JnOk2cqiYgMi3JUGtKyTZHFZmTpVRnnXrgYluV_xE3J8PeBlzYMW8bYDVoyAEdGJkbSuyiC0Som4RLzFV7Crqm_FDt7Vt_otuZOJxCrT__wiKZMK7by7Yht5ks-EyunzMYpXcg5elX5yJrpqrr6j44RBUv3yMxsQmqJrYKUxkyaK1T3hATtTG4f_vte5nMy8a0eUuC3_VzsTf7IYWmHfjZzKGDwpzF-1Fkbmd_XNmvLHnGO_BfqB6UHNOiEXJtZZgNGwU42LFt1PGL-sQlOH-uZk50M_FmP7CxfJ_aYfK2wfi1ZZ_dXUI8mO_-z8LNJmGnUSyDUmWp-moOerQSLoxJEzuyNGbBFJpHO5eeCl6vz4unc9riQgg=w470-h439-no?authuser=1" alt="">
                 </div>
             </div>
                 
         </section>
     </div>
     <div class="apply" id="apply">
-        <img class="background-img" id="back-1" src="./assets/app-background1.jpg" alt="">
-        <img class="background-img" id="back-2" src="./assets/app-background2.jpg" alt="">
-        <img class="background-img" id="back-3" src="./assets/app-background3.jpg" alt="">
-        <img class="background-img" id="back-4" src="./assets/app-background4.jpg" alt="">
+        <img class="background-img" id="back-1" src="https://lh3.googleusercontent.com/av6WoA_2Sj-KV0a5qXr3caNrn5VukwCOwSN7C4wCDZ46qTiPj0HaPmJFg0uu09kEWMSEG8Zo9PhxSFOivHs4ZXlPsVRtIfbq_M5twbTQszOKI-ry98w7xAtYD7Vvdd90sf0WhbK7ee3HY-O-J2hDlXpbgMYU4T2pRGzPe4SILlbi8m44l8Iuc07MOm5aPkOHTfUHjgEtkI3CCyPdi0fpq1-Wa6nO8pRmL5nFeWkBBsnmx4B9ScLgjUnRW87BRG2qd6J0GA6ktMUiydmh45OVcOM1O1ZQjxIlECBpSdWxoxMMEOOuEpl0uhhOnFcLQV8eLzdlAumhqZ690Zvey1hayFf9yGp4-rX0pgjW0XUQJ5Sar2jatBCGMoGaw8Ntsajw54bG3LGVFA0iJejb-0icTrhRk5v5EFxSYKxPzxu9qinOGiyktcRMZk-gKCsoFF83GsstclOq3mUeaGVM-2O5yBWBUG0eVctAvQ3PHSlkTlkWq5lIkjoK3bUXifLA8U6gJ00ldDpPZL7h2NstwRv00M69BDmH85CXBof8kFwS9GCfuZjh1DlAp39Ot6vZ0zWrceX4Wai4JsPAI0xiQbc1rIgviqwRWFDd7vEl_KMXQ_sz2TXP1ND24bUrQpuZEuUqtp_ldt83Kua9la0SYWLm2tcENn6hnFWgxhZ_S_CfWxgPQm0A3yAFRapQNjBOLUs9Ihyn5D9rie-x1vNRMmLH2Og=w1470-h690-no?authuser=1" alt="">
+        <img class="background-img" id="back-2" src="https://lh3.googleusercontent.com/Fob6DFH1O03-yeq8HClrLD1IX2Ul0-bSFc3LcfBTcpmVg3-_qrAK09m9910PczxjboodipK3F0hkF7CjI1d3vF_ZIKoerJIZLcfk-zXFpB1k-py2Q-8LMetXFRqqgaCWJ8zfMVQF_Fyptu36GMaEx8ces4KnEMPkQt0K7bxV7TmH-2iS1osgPorHRcrv6lGE0lH_uI_kCqrQts78xeLtRK17QdgdVBCSGl1QY2QBC5tdoyM_QkPGzLG0Eq7SszHM_N8x5JOw7E_VtRw8-F6fsO7FAi62le4usyAw3dpbaam_e0YtlWyoZx2Uwzl9moy-uzXNmUaCfXYWGrt9dqLmkwlJyoqCJpDhAxDYmLq4f_X0Dxnyy8zS9-5REK0rrp2S56Qhs1gNRb458_Nsq33aND2YqApxHpgAI96HbZgVwGHlJIGb_kPSUjEDhD7tazshyC0Q3HKD6goqDtZmfxfFryXyBnH-am6J9HXUkqRvwDz8K3JiryuXSAHV4i8kkKkUZ7oY8QgmI-RD_Ap81r1WJ1Eh__RMd9UFfw7_qkw78FRK_D63Wi_Ev2gOMc5bDBxozvhin21kAYbwsBzctRG1bCwC13OdVKCqkTIMEloiZkOdS49G0WiOSdMxq4WoyXeIHzCwcyoYpJie6w8H4VmZKhm4myQDN99_UcvS0IfjbS7hnuxhebLvBkfwHiqMazfyIzrPVV8v2pw8NlutT7Qhs1E=w1470-h690-no?authuser=1" alt="">
+        <img class="background-img" id="back-3" src="https://lh3.googleusercontent.com/-ogOiiudKvw7QOb-Wvg-6AewoYM6e0yokRIJtYtOTD-xlZIk2QYt3-3oYLZT1PiPZ1XRI-mLTyzh71mqaKtf37sbkEE3Xabchz33URB7f-nT3h5hxOlTLaMyQt--qYk_7cNfa0R_d8OTExATMfng1whibGfM5Oybi5h08tvo0SliuTGHOrW2-ZoMHeQUGSj-RIqgt9tIZ18JrBzIxg1biNYZxGBPSwhLdc8yh-bFiwvEWXu78h7HGtw8PmwbyKcrjRZxuy1ZoVb0oxxOz40hraSEL7bv61LSfqBobJI1BWZBF3vmLQ7gWK40D4zql_K3YEiCB8jxLNoe24yPQ6M651E-YyiencD_rY8OrTfHSxX_c6NIvXDzlac8BpvIieCNpH7OMq-VLFoeHf3wFxptU-_5NFy18C20oiLX-OUP8j7Ghc5b1Xnwec5RkFx_hsS3bWU9xKrIDnvqVApcXWW5YX4svC_63LxGTSm8JyCClJ5m-sOuUtZZMXPYYsVVe1q2yX7KMuVsT_j7RUhwuyD6bZh2wTZz4fvIqs9puEj3cXeUbBgkV0PkyP4HgbWsVrES9sc93Gbqy5MM9OnbQBjsEOQsWCyoK32aGj_4HxKtjldcxmL0i1TONsDIqRAoAblyzNuhPvp5JYmlHiWpYUQmDNzdlk4M7wgl2PgsQdzi0lvBjDR_Gl8uIPAOWmowJ4oCRGEU5K8rF2NIroS1cyqbhdI=w1470-h690-no?authuser=1" alt="">
+        <img class="background-img" id="back-4" src="https://lh3.googleusercontent.com/GfYRbzb2i1qrZB6JNtu8xWs2lQnE6Jjane061bVfzzj7ufViueSWPlooJtiE30wYQj_WSgV-Z4uX3dl0qjht1pC3JNM6eSiQAlSxGZhHxGJOmWle66_NSSry50vHGveirZKdbozRPhYv6s_b4EBSONYFL03B7v2lvRJoSciZFZ1N5SItPq7f7kgjqM3A_S-6Di_tY6HHyXKVzg2BQJhvm60L0ccUPqYWC_Jm7fPDovzMaRBnVAzt1oV84BnOdvU6DwHbIngiSoW1_ZiSShpEG4LG7woZxudIGSJMnZ38FX8JNG3NoOa2Pmwgh0OlTLCfVTEexNW2g6DrjPxGjeSnFImHAwSPl53LquWlnZ1jkSrFV7x44wQsG4p6z96IRF8IBtPY6inrHHNMzqyctnj5_LNil1KnAnCWohYtj_9qvQQ-h2jlnUFCMrdPEggvscgbuUhog81HU5icLi-jC7YvjbDAKbXMX9misMv9O_PS5brj0rtM0es-Pbhv4sdqA4rffF0LRg6_YqsDBrnswHzvWPmW04FCZCMY8tofOqP2_fD-CqWRZ96NL9U1wihKf-f4pHntqhmQ6SAI8hbZAOvkSD4235OxiFozxnxPNm6jucNCdRTfKjJMGJXC-aJetYGItc1ZFgDyXEFc1WRLtScC4gyOLR-0XFIy-0PR3ECztEVeU8iiq8qrfamUHIGqVpmokOfdecxu4p8MJYdfLKVrzJ8=w1470-h690-no?authuser=1" alt="">
         <div class="container-apply">
             
             <div class="apply-header">
@@ -118,8 +1123,8 @@
             </div>
             <div class="apply-section">
                 <div onmouseover="onMouse1()" onmouseout="outMouse1()" id="apply1" class="applies">
-                    <img id="apply-imgs" class="apply-imgs" src="./assets/apply1.png" alt="">
-                    <img src="./assets/apply1-icon.png" alt="">
+                    <img id="apply-imgs" class="apply-imgs" src="https://lh3.googleusercontent.com/rU2kZvpMeTeZrzQTTEw92qhSN7CPpiG1ktiTFdGHZeipIMIMRfeCjB6PSr1Dum6N5hlGIDcPqBKLE7-936RtF8PJDxzbKJQQ99PC4JxQlinEMJWJ07x7AEqFvT9YYPyOWTlSwbmhIUNOupC6j7-oLgF8fpaoBiN21Swlruh-Mbm9qEDBDWY-dGGduvUbO1REHEdcJ1fAGiiNqD4tE_hERp5fupQPfDe23wJ5jHZrwtozH9z6YillQ9aybJBlDzKwrxSLFvsrWx2SF-fgmZKjr_5G4g5GMEm-5sMt5C3FO8IOX_vw8B9Hzh0AfleEeggvJkKRhhhUuVknG51ht3ejNt9GioKj-WtC32CKiz1jKfQkVv-7E2BtM2wlQVG7buNWRhTT0x65NwaB03yjhPsuRvCarbuiUuaBi0sykFxrrV41RQhQFigSnjGdKOcDL3OonTLKIJqM8GBWbGG7W_3yf_rrh16xM0rdgr_uoAq93GWH1VdqblO5HJV5V5IOF7_XNoslqwkKpyz5g9yX3nKi1OYxg5VE-aR4KGzWfct4M2kogXK3CcHwpjP4wTr1hnzbFjP5U94go7HVYJqykBiISLkNmKLzHboooPQKroSF9MFpIgoS2U1Xjn1n0tSgnmc3u-RfPgSx4Gq4FZfaeHrjC58zcNVw-gu4VOXTyxjBg6J6HLEkYQzPaihAFKGUwD_BpwdGKlSnQBpH-Tg_Tusg0Pw=w236-h167-no?authuser=1" alt="">
+                    <img src="https://lh3.googleusercontent.com/v64gr9qZxPZG_qlXoSCSdCEMoSTULekpVUbzcnmLN1G03_1dsa0fwKq_mTtQ1Xp4jVtrzs3F7efYVhnmvIbuPblhwNl8lqKTX1vlzHWr6WObnRkAE0HvyD_StatomQ10dBucGdm23oAMh0_9ztFG3HcS7wb5_eFAvA7phqBXixAMLuErwd1GzeUISMjczIhZvSyKKjMVmKIRGhMnZUjRxTmscHVam67nBU8jvJy_NlKOwTZx77dndceS_DVkk0weCmiF5cd68qofGXzmIPzvyccc4L6ge3Cr9JrlFmVcrhKBqXSy7TaigUtx32GNqAWSEhMAEFZ6oGKc9Z0vAAsyYyLXTNP7wNsrGqR5eNQYEu29HkEhJYTrrieYR6vkvSthymf68FVB16kV87J6q0IO5BBSSwhUHJndCC40sXA_su8WY73oy6lWHOvQVP3gnlrnAny1YclQitE6RbhxZfHZBZtEaxK6zNcfEqbVUECr_TnZP88jSdEijlSC3cVgLlXuVvvaTfmt2D5b4mgQuZuW9h-KxzVSPsftBf8Wprp3fYGgK1RrZh3t_cYZDFhhDWQcPx9m1_NkZAodBs3D0MsmrU-IBXsyDOZtB9tDXOGMY3jDZd1_VkTwQ5Qs1fZfJ3T_ut3U26tVt9C66ttPoWaTkifmpu6btaQlTURfAIIahS0PqCA139xjXsSmYchF27ILpoECVEeo-EISzxxSK0GIU34=s417-no?authuser=1" alt="">
                     <div>
                         <p>연장학습신청</p>
                         <span class="sp-top">추가 연장학습이 필요한 경우</span>
@@ -128,8 +1133,8 @@
                     <button>신청하기</button>
                 </div>
                 <div onmouseover="onMouse2()" onmouseout="outMouse2()" id="apply2" class="applies">
-                    <img id="apply-img2" class="apply-imgs" src="./assets/apply2.png" alt="">
-                    <img src="./assets/apply2-icon.png" alt="">
+                    <img id="apply-img2" class="apply-imgs" src="https://lh3.googleusercontent.com/rpmAJTUBA7Hz_cIHumegg7Ia6L66gYVr22cIPSQV1HueL9S7Ghbh9u_vPfD4bU4tLJ_sEIu5FtswCZp4pYGw4R-Wmqb3oz6S20LvNERkbDO25QRFLKCHeDMwmkyFxWQwZRqRCUJsyrYBRQ2BDdrLZU1g7PDprMNllt4xVK4ysF5JuxQQcNrrb0CSdE2TIsr2ZXALcm5MpQXHLJwWR3u-I_P8y9NNRuwZm8I143Y816rhChUofAexXgN6akfxxiw4Cgj3tHlM00E04CJfryu7oGaR8QIWXQf7JtFyHH3UkcrZhizI4LEA1_2b5noT5qydz8RH1lAJvdtXu26PzPDw5ng5T6IdRg5r9DF-7m6ZXf-Q_-9lDPoHZK5IkKIb51hDWuYLaVBNJ3bUPMFr0ILJjWKh_HwHJ6r_jPxH0Dg99CqftWeHigr57g5MwCo_CGc0H8tl05ZT22H2emnC_rfG0nF5BsDQdS_XNMadq9nXTlxW3QWgzvnbeZ58-acUXWIPfNbZ5_mHjhxQPFdcGtyyGeOX7cMD7Zji986wv8EPLxVnerjLoTP6Kb5rYe7oQfnFG55ir_Q7TNHlQ-pteHOr2RUc4_ytSk7DK3Dw69NL7yxnkoTSR10tF70lBJB7Oiansx-rnYVhu9BqdDAb0NIQ9ZLR4if5aByqTB2cgbFe8ARGvEBAVLiIKj5RqIMV2k_C60ZwoJ42MS_IPY4OVfjfhOQ=w113-h283-no?authuser=1" alt="">
+                    <img src="https://lh3.googleusercontent.com/NyxdFEVpsKLk_ROTPEOgzFOHfKtCzvN6SkSai3nbbGeDCX32Zf75_bEq359rwOjil5hDmvfyVTd5u7H6Wc_6GRCIGybOv4IeBZOO26gddMfi-AbwlZT-SCTTwoTCK7L0PUJ8gGSOLeLfkaHFwag_0-ExGBfh7XofGIXWUnJrjaO2B4mxNuUHCGWt-GQyaGdErgXu4PgCo2JYq9DSocW0MFaZQedM8_JNme7EzJ_UTILc3Gv8f9rn2-_sm-7CaU-6Mhh7ZPLFRW9ebBDPArkerUhszztYyIJIbhaB4UwyOATa9S8PuVpGEs-F6oEQgJGuIyz2WNEIqNgdj7ikVaIDCVBXUKSSOqYWXF3lZJNsILLKAS61EFCWGYdOBTUMJ5ciNS5o5oHLSC8U8sJ-5ymy-LsjTqleCLxiU_5s2h2ppI8lMf2Inno7PvycL5qdkW602E2D4sapqdA9qYcp2CxgNyVzy08MdqHuVuA5iiIBrAzYCxkgHXTaNc_ymyekvUUlj5qSF_fh3axoS9ZOI8Pw4eNXeshVHpbXDv6UByJQ8o-yWaOXtm65F3q63ZSJFyXJ4aib-mze7us2p_COHEHtqvU08iSkIEKgdNxr7a2wFjxxduVjD5lUuNmjXomWsrMZGmuhPEM2WEMsjMdrkmXgl-5e9YsxkGDuD_XPGL7iWQ2-fWiLiC_FYcdKNK3i5DQ0WRgwFg0YiTEs4DcrZbhzaX4=s417-no?authuser=1" alt="">
                     <div>
                         <p>외출신청</p>
                         <span class="sp-top">주말 기숙사 외출이 필요한 경우</span>
@@ -138,8 +1143,8 @@
                     <button>신청하기</button>
                 </div>
                 <div onmouseover="onMouse3()" onmouseout="outMouse3()" id="apply3" class="applies">
-                    <img id="apply-img3" class="apply-imgs" src="./assets/apply3.png" alt="">
-                    <img src="./assets/apply3-icon.png" alt="">
+                    <img id="apply-img3" class="apply-imgs" src="https://lh3.googleusercontent.com/LVfAqbA9-M5RR_dxKRAJcnFOxjf7HcD_jOA8fXmDQ8tJaG3EKeNEWwqNhebRh8lV65UqKazrHHCaYWgq9TvhFHYUiXTTjs_OjPuEeIJ-5oI6WiJjQ9gUSdOgbsoUuqZJgw3QUHsE-0VMi-krSvslyRLgt3Rgu8ZfwrZjngf6IvwIpxKYQc8BgO8ICZbse0_KhOKHE1nrM9dAuu9-8_eLfKrB9R4by5Rpa1It3oR-RPVtKWDdFM0h-KO6z3XLRQpZ8hQG3ePrKtPwZc5H3rnk_5HfPEyXI1wDmRs-H9qelwbnuDzhIq9zrj0tgYzz4-sTd3Z4XuS56t5PBTzFTUlcqsN_g23hVtUdlps2Y_FECHOV6G_OvpB7U_euiDDtWwWH2gAzO5WwnUoShvS-bhkjj0degJBKEyhoKd2IsbVFQcqtNgTqwPw7svm82bQCfyCRbjM2_T98tIU6_hPlGQOO2JcyNbLA5RJfa0Tk_CnW0X0PF2S1rdh7lzfsL41V9_TvAegbhYcP2zHt1yzsqZqv-xvDXa905uli-Xx6qOtb39RvR2mtYPWeHlg94lxfuVAZo9aDTqZ1L2ZxgPkIJHbaVPhl-M93b9rD-6l3jh-VeA_9ptruzAtH8FdRrsCvleIvFPUlFHX2JMO_9FMmX7kXWsJjMA-ezAGAiorkRPyXYf1maKXRPK7bzeQIADzl7NzajAg0sEQ9qZcgXYYqU1h2xKU=w285-h190-no?authuser=1" alt="">
+                    <img src="https://lh3.googleusercontent.com/HvQvZxM0DMFcNAxcnJRTVlH1qXYfgLF2T6ZbxuCnITszXL2uAHlKX7T1X98nEbtAA3uSTEsNfCpfjTfISm2AmXG3tHMegwLLO1kD1LukBNbdXofuMfBSOA42e87xIPgdhJdBKlZYZF1LmaMVhphNKC_UYtLt3nkcW08Mysfq-UnCaMWzwsxEaVS-L6GJ3T8MKqqiMyE7bgAUQcJPf90ZltfVG4xQRnfS2K3XXIv6Tbf8VLgsd9JSZda8rx9gy06ldMSQpqmGQS8yrqZbD3lPhNb1vXKY_V3EqHGQLw-r5BdNs0BVM5fJLnBm_4MOfwE0hFdbdjTvk7IljJbJLCAge7X5fdOSHpmHLjtNEymlLRaJxwRO1yKn5rCZLJe_4Gz9NEuhL1x7Wq4nTYN1V5fLwXSxXFu2kZIrxGwXyanAFCnYtBFqdD5PuFwN31c9gkFPphYACBEQ4vSgTqq-nNmrvM_jwUchFrLYFV0et6EHULv11s9q0eh15vNqVZHYH2Tbcj4AlWFtDAqwyXKMWmt0vhTmKBbRWKB_GBwmKz_5H3wX8KIczPB7XHsIwkWY4TpF1U1aAfr9RVOB6QoIq_gHCqGXx9a1Thj9jvWrUf7CqTSTdDmxYjDS3pdpl2rxidcNWVHIAeoyGprO8dm5McNseBBX-I4c_8yaA3P5E5nFfgvUwLsLcJ47z5JK7BfalAqk8NzP2YtIs7l_PdNnciTgT-8=s417-no?authuser=1" alt="">
                     <div>
                         <p>잔류신청</p>
                         <span class="sp-top">주말 기숙사 잔류여부를 확인하고</span>
@@ -148,8 +1153,8 @@
                     <button>신청하기</button>
                 </div>
                 <div onmouseover="onMouse4()" onmouseout="outMouse4()" id="apply4" class="applies">
-                    <img id="apply-img4" class="apply-imgs" src="./assets/apply4.png" alt="">
-                    <img src="./assets/apply4-icon.png" alt="">
+                    <img id="apply-img4" class="apply-imgs" src="https://lh3.googleusercontent.com/7KXhR_gQRyb3kvZTJjHIiB3gx-vFwb8K3Bj5oONhTFIhytqAnNVgI-88ZOGoOC_R86_42kFOKj1yPpHKFSfzMCK5bzTOEoBFQ-zLdTQq2xa_ccGxegvWVpdUXT3cWRgDcM9-Rff7CC1AlKBBt7cJkn6KGR5Xr2NBqC7xnB_YSL1nP6136aL5M1VN6m2h2Qpcd18zgooTMEoegS82sQCyIMtuAOfY-KKcIWlSWepH96MPEs5eaCPqKkGg60LGpZe_HWhcuTRZyKsA3Kd1fexDt889sKExIQt4AElZ3LurcvFT1qnEBdsqNom6ndvWLYp0FQKO034z6XB8rv54iA6LnGCkt2X2IOVFYhFYd3eLxd_Jict08XJ6iCsFX0qKVPR9wGpEnm7dg57EtpkJUMhievYemRj57kh_o2_ceI0niHmQldERnD6w1-LFAb4bJmK5p3LoXPv2XxaQUfZEs85jM-fLDEC20xeMSzRHHIp-rwQ3ZF0B9jdTogYFqkcthMHaQwdWSXDkLdDwZFYW7VoQqhIrCnaw2gvRD2hOcPr-N3NSO34GO-P9MLplBzrHqgg2UEdTIYUFd9IJcVUCQXNIxJulbF-Dm4dHII5CDp6_U64xS-FHBqi6cm1WkWQuWMSsC9LU8s-wWaRDfYkC9ZJq1IeohKjTQGLZjFTr4NjAKhfQ-6sjtTCX_8fX_ZuKRoUkdqpxTr1IWtDVNxU_zAN5qtE=w158-h318-no?authuser=1" alt="">
+                    <img src="https://lh3.googleusercontent.com/mfBt6QT9EbPswQDd1TiWPvIZVRJFA_tXU7sptj_kwVj2QytQugMcS5seL4wVeZVxmZHpOCC7xFnNY3yG5Uwpuqyen2nQNcwuH2uOjVGKJH1m6tn79FdtbREuexjgGaHXhcBKSyErPAuG_eRKygk1vTauOJoYmC829wgZjWrUfXHV9QSmpLHMlopoUY2FxzbQN_NdSwA9tCOE6ewP70VGBksKmm7UnbNjbVPhvy-JnxQ2D1CZ1bdV3qYuUWlSFhZaNzr9gKrf3OwL5NzmUp0f6GC4VVpyOHx8qGmcuxDI71jRVYGUF3xvU9SqRyzYkbJtjVMdVmbrHvmlOK6rawbtELwatz0X62WrdW3PeYRcjMVXwHFdkNIKZVkhJn-PBHvCZ8bb-uEc4jNDPG7Pm_g_jlh1ytEwQnYEgg7kez7oCvW7Jy_Mr6QuIrMnnf6-kV5s2pYhpr6C7_qrh1zDbIXWb0stCgzWmKg7Of_EYH9LyK9SkEnZb3Oq7QcHd_OUocAkhWfJA1NO8hSQdU1PqjjMTkedzdHkTjUcVACHW-H_9l2IUQpUrIsjliCmRLUb7Lcq8KysFLJbVdzflRjKDjM1kDMKfJYQbvE9v0nOJpgSeVboUawlUMBZcWZRCQb0fshlotQT5nvMfcPwuTWOlUJkNbghY3CQDQVEf1_kdE-YDF_4IlF5cdqj7iogZhtIzlv4xMLSD8L-tj-XPDU6NhPVQfM=s417-no?authuser=1" alt="">
                     <div>
                         <p>기상음악신청</p>
                         <span class="sp-top">월요일부터 금요일까지 방송할</span>
@@ -189,14 +1194,14 @@
             </div>
         </div>
         <div id="container-background-notice">
-            <img src="./assets/notice-left.png" alt="" class="background-notice" >
+            <img src="https://lh3.googleusercontent.com/JFtCpmDJtUQD8bTN0AOI-Cu_c1GKOX-awWM0G5WPpFGu8DQqgVFQ61jRX-YK2N43mwkQkkvdvScE3QQ70qWsX5AV1Tp4A5ZHQsvwO1IxpFNKgiY4d9WBHpY-wvjXWz95QqNm8JaLWv0WUUqyjeC1o94mCB82jnPxBkrnmN-0zdSqv0MBUKK9jUsPvL4dNDd2D7s0Ts2-I2gPKJszoRS9JfUpMrofP4lgM6nbLqTGyoTY6HzHchxhFUacN2Nk5m4HxidqM3LXyrKrKr2KRPoZA657Ifp3sj4M4EZN9gigvtIgSfpSd2OKcyrWNI2kf3H9f3tdZ_3SbpmHQhUesKNTAjOQ3YijdG9ZUZqPTVVm-TreSzOrQEROODnhu-P4U9AoB1pyWOhybXUqqyWx4TvKLmOOvg8QfF28OT33E0VIkCs1s9V3MW3pf2pdHsBcKKu-0s8QqZmawGX2FUF_OY2qcYkZgULMxPb1mDzOGAUAkAUR54jncUxO9j0kuCl9BMUEXm3hSgHffh7MZ7a-lxwaD-6iLj2OQbMw9NyVh7GPJ_HCw8kmkUkA0jHjKWVy21hzU9SYSBF3OTAYd8T04fPLgowIwYADxJBl2Wi8hwsmO3sT1badgfaBdjMRNoEANi55SZuHgyf8XGdEiybSydwjLGVwVnJ4xFfEVeCMXrT7HWRQJ9qyN4eGbxLpJEcwyWWiV_2eYC6RiVx7urx9HF_I3Uo=w284-h676-no?authuser=1" alt="" class="background-notice" >
             
-            <img src="./assets/notice-right.png" alt="" class="background-notice" >
+            <img src="https://lh3.googleusercontent.com/Z0_DUr5VvN5ubpnvPL-Mh9CyRMnu9pFVH7Koeab5NwzdQjVxu1i2W1QL3a8r2dr96USGTzy-n19OL6w1HhAC5HYaMReLwTIhYo2uVDjkKCtDDacYH8VfkXimb1_1fhYQL6b4X2K7a9JE9j6iLw0PxNc3XDofTyDAlALwqWUT_8VduxMuOVZdD6IN7tawRfKtx1irir3HfONW0XoYBfnFYBCqFvEEXmDkrfi4eM2otfVken4mARklD7n8Y-slDJmBTJ1KX5aPBzE82Fr84PE8CVnMI6cTKkaw7J91QXG4Gtgmgj4CLp-72vmfG2l6LfgVx6hi4n8GnsBM-39winKmI2lcnjL-Mu2gjoYmJpuK3uSgyeyeMsXag98BQ8MWfn48DhYqvojA4si9vl7GJKEoL-b_tqr0PakrNRg1h-DRtdDcz0EaHIXLTO9qie3_Xlw8dQAHlhQktwf1N_hxLEjL8_LuDReTeFW7Gi42Alu9Y6_17xtDb_TPGxhoabeHujTjMs-iJ_mqVuVF7XY92PXGDtaKNxmut9Ujjb-OXWKKEw3ysqa1tMefxE5Y_Tu3xR67kCQt8BkAGgSEf1RncFoHZx412Cn9-UnChHQzYdswYXBD9FbzWs90ANwNMSdiBXBB0s52_7hUK-ZkNRELQIaOh8gIEDbraMV8G_KBk0cVg4VMR5OztGj8z3HVozunOt_LkX2txznDaxfbxyYCr971CbU=w286-h622-no?authuser=1" alt="" class="background-notice" >
             
         </div>
     </div>
     <div class="plus">
-        <img id="detail-background" src="./assets/detail-background.png" alt="">
+        <img id="detail-background" src="https://lh3.googleusercontent.com/5YHY2_WPK8CAtJ_FkPC-GmhuEy-XzQM-SleWszLcaVIJQ1ymUyFSsJL1R5ZOpySAH4e6mbZr_fr9TIZpAsACYWJoBdRHpoibXvByRkK7RrHQt1jNxepOuxXiThVnsVsklneRX-kxvGKtd1w7Rx6vp1u9S95sXOcCYm592cK015bbUBx2eSQNrW_3B4uv6P67PZkNy6hzuJg3GbqOHUw0ZyWdfcd55uY7_1nE00TJD962FfSXYJGtWAHbPU5Wmc8eqm7LZwy8hQo8z_L48tLx84MqtAp6aL4R3Kq4x1Z-iUtp07Zw8qkLBmZnFeYjVe_qoqSrMX9EtG4yWZnktM6OI6u0kuobKYbpC_uN3rFnane6TCvKivkwZk0pw-DKvlq1S35GRkARqS1eQxlML2K7BtIkoGmYwLCRJKS2XdEftQBrUbfqT2YG0abbGBFU9gLsGY72RhPoQJ-xV7mIiZjfcQt0d55nkx6f5P5d7OujeTaShbU07FFuzyUEz8Q9-k1x0Lgm80LdEem8lP0Uy2FaIqzEB93E2-TKs96sx2wZuL23P3zvKwJmT5mrRfxz_lSP2KwtDV8COUvqwoL8Y8odRAzWXgSm0s6jFXvGY0G7FOc7LtD0IxucSJJhMC61XTfLZfwsNJNTczAYDkw1TjRPliB_wXl8zkpyQ9gL2fOLsMm1Z5as_sSCEQLnoaZpITTGXJABwzIGD9zL6wicf6WVqRg=w1431-h707-no?authuser=1" alt="">
         <div class="container-plus">
             <div id="header-plus">
                 <span>부가기능</span>
@@ -204,20 +1209,20 @@
             </div>
             <div id="body-plus">
                 <div class="plus-choice">
-                    <div>
-                        <img src="./assets/detail-button1.jpg" alt="#">
+                    <div class="div-img">
+                        <img src="https://lh3.googleusercontent.com/FO1IaVU_C3g5Y0CvR6Yh2DXwFssiUtCf_3FYmVPzVtgsAZNbfF8_XNvfx8YIZ3U2vn0PO_C7TDX_DItmIcdBr-EP-bV13LmghvLzEF7dynOO4geml5POl_Tw44FI-KmuHKa3_Uk2rCL8p3h1YgaizwUo5okdyV4avUxN6iFoS1UjOxhoPrXgT772sgtvoaQEWn3tAafzJcYCp2Bdhn-XPblqZWptxn_gc4y68-3dJcRZN3kC_Ybje9MpeJuSpTj1X4pAEiA83bDfCw7h3vOXCBy73KeTe0b98V8RV2YjYVdG2vpwNZU9fezeZ60_Nwyb7jHmpBJ6BNix5xoLPNTv4ntpxlVnsAST2jS8OvkLQ7fyNy1ILebHV5nnORU5EmT1dYV0VLeBm4Sdg6bC2XII69KH9uhvtJY5WQOPW5S_r_Td82NYMwPeZW1xbJ-KfmFe3wI8FVuSobKv70BmX75fKSj75lw9MMC5ZtrDevTcFBXCqE_M6NZUK9WGDEGmEsoH_8U0J1zu1JHvMpRMbnfghgZI3R2JG-iGHvn4M5Yk_ybRJrh2ibsWoh128rM7YTdzBA816MEv9ryO-f0Xo2eM-GrnAmxMf0rDopgzDSx_mVk0CcMqXs2eQKeDJuWFWn89kHBya60oGsEjWSvnd6EDeNzbFVBWdasm1mf7Dp7nrlaQ2dTMG-wRSeXmXTg2Zs8EILF4GpMaLKF4VVD3p-Fowv4=w480-h320-no?authuser=1" alt="#">
                     </div>
                     <span>설문조사</span>
                 </div>
                 <div class="plus-choice">
-                    <div>
-                        <img src="./assets/detail-button2.jpg" alt="#">
+                    <div class="div-img">
+                        <img src="https://lh3.googleusercontent.com/jbpvoptStLuhxn_0SF4dyKIEKMw2quCkeXdE0w7R2DtpPrzZFICzhIuy3NY0fYWs9_c6hdF6UKqXTNdm_FKnyLoUeyi-ChRHboWbsSxyRIHCHazsdfRQmP0xb9OH1yc0yUdmXB_991HLZ9BHqKSdWll0DLpsT9OR0RsmFbMmKOnTOywwZdLURRsVajCNnq14Ci_NX-68e5bLINBSt29o-NVAOO5uGGeNXRmjpcLrLA-CkyWcdJgC8LzcXQZ5x39l58gTr1mOmFx5bNXLfKyo7xzBMRddw5K2ZCSJqEeIRVHJToSYUfauMG23so8fxWHWf8i3M5JukeoFZ2DSySGVPsf-R27dpb3beJnobqdp_vbkd7o6gf5USpKDAyTJeA-d2a3R9XF-pkTkl-LEXWS9e3_RTnkbuf1H04AWAHERR5YeH7Dw5PJyMhc7IfouUeecBJIGMO_oQxnWpULFashIGB8BrxIVlxc3ybYij12w6TQOPjDtbmTSo28Tcj3V89TNjFuxAg3Wwou-ta_FchrsKyHBwII5Q41JDtZL9mAZMI7Kz1qrJoXnREgfhoBwJDymXLNMPIysQ9NBo_Ai94o1gMrJhQNTqkX2plQfOCmFaHRIXY0rHzoAKWoNcT0N-O7S-jpfM4aup0VsG4OFKQ-nEjVG-4jU4p_-1ad87RvESbK4P8C_XMkkF9DkqqBqFkG2RHsynOV_nSt0Y7Y3iw49pU0=w468-h312-no?authuser=1" alt="#">
                     </div>
                     <span>버그신고</span>
                 </div>
                 <div class="plus-choice">
-                    <div>
-                        <img src="./assets/detail-button3.jpg" alt="#">
+                    <div class="div-img">
+                        <img src="https://lh3.googleusercontent.com/QwVPuRAf_gRJ9q8ltYQePSiCd3KU6uJAMoLdreISu1SWA5RzQBmWJ3Og8F9Q10wvH0TQYHi6PgUsMFLPiTWOP2sI2XrMls0eu-Sit_O-ZSHp7wQu9VtrmXGo4pjq3Wz7-eEXaj4jrvQnKf8Saw6ZkumDJVCDg_1wV2j5KEHlki2HEKPMnxTK4LWBiY0rPiUbSgKisog5uDBBnh70kzxvpRF-3lVjVYLCfvLuM8aerqNDHgySNIGNx4yCU0sOOt90MFm0KxY4i0Z9g5gHa8oTC_sax9SA2S2IXtWxJ5FrqafH2Fgr1QpmDucoNMpZUZj7elPvMsdfMuYgzsr2ViX2ONInUXPtxg3r-NZWlabh_hQx8Xjx_Hsz_Dnf_mOEayYz2lCeWjDFEDcpXjcWN5cTqsZ3ZFzCECmcxqaMSVMfs7JCJEMPqmuRBnYdbjRUAptBK7m0UzoNTSc_plKt0jLFPXXVMgcX0hundgSVQWarsKFTh1otz5PyYKAp-jkon_G2B_dSRoP92O5fI9LGw2YkE6BFiG_2KTfooawvrA_zBJ0tLYY3nJzNDrIlnvN2YHovJSuOe-SuCGMvcpoclrNmk9wUPSyMPP77OxBMEkfMkX_AuJ2AzAEEs4QupCzdU8DV3L7rB6-JapXdpUzWSnvdGxNKuc_Lht6haoDBkTJw1PEKxedlxqcr-7_n4Wy7PQkgw0mEi6NtWeq0UBCsaAFujFY=w472-h315-no?authuser=1" alt="#">
                     </div>
                     <span>시설물 고장 신고</span>
                 </div>
@@ -281,22 +1286,294 @@
             </div>
             <div class="footer-foot">
                 <div class="foot-left">
-                    <img id="footer-logo" src="./assets/login.png" alt="">
+                    <img id="footer-logo" src="https://lh3.googleusercontent.com/8SUVMvFfC_nmW6vWfw-yR2vh4txEyzXtWLSi_uvLN7TGHWpAbXx2Fd8MA1lnuvc6Xu6rcEkRM9a_DMzPYjvkDgjwNvFkzX2yRKErCR-tXiSZqMPE4sxRxU2edNQXR9hgDh2hwSQEERNW-tXip6t6HOgiJG1vZifZtycDTfcYQMEHj9-wcKe5odsPC4bTTjveE5yLJnoeRU0tndE0WW85-iO5RAM5c7tnp6Qc7t0FI6zZ5Jj5YDEdrwbE-UVckgmXSUFvAB3hnX7IHizWeutMSdiR5wFPL1ps2j16H82Oh0RanbkhWByROie2ZVgDDXC1W2LQzj8cv9BvGAnQlyDdg0PiC5_gZHoRlzkmzZPwkhkdmi4KKMQMHm1vI0Ih2NNsWI06xk92nHR9Q9wi286hhM6NoHgrM91aFIRRV7Mem-qFAnKrGstmkhrUFNdG14gt400xOLG1EY5WVypeC4-BFOUDMvdEFUweWuFOLgRsPQl6zGPpTLBNwGMcMvCmKLG1jQ8po8Encz5qh8QGoBviJ9D0u8F5RPKZPMxdMGIWiPdINzFfY0M7p225jTQ7aer-1jB3EZwxrvkXDf_UuWQLnTd6RYpaqWtDhefKIswhymdAp-0vOvlNUJXfzMXoNgQqTBQwuKXVYw91y89Htq4_OG2ooK9NQUubrd91riKBWlEQcq-CPiEKCDtPH7LFBM4MpTPbG-h80YWq4CLDWDdzscs=s120-no?authuser=1" alt="">
                     <span>2021 Team DMS</span>
                 </div>
                 <div class="foot-right">
                     <a href="https://www.facebook.com/DMSforDSM">
-                        <img src="./assets/facebook.png" alt="">
+                        <img src="https://lh3.googleusercontent.com/kdr1lFp-FfNPlMYGAtr2MSfLgyD_7U4PgjXTH__FTVCMP4MYPm3brMOPtG15pGWoLnWk9iOd9TZ85BQAhgDm_uUwBBwA4K9Kl-6g6QSKtiioISLdXUiFM_zgrWMAmsm4CA89Z1IfjMNS8FtpViM64Gf7k9RZkQr_7pmGt2z0FC3h3Z04CEnzRXTRz1S5vCtOD2hksdq_NGvHr0KjU2REmP4TyD5TznabvzYqtYTzq5cDXd6iAdsvIHqoX6o__esHgGiDuWLB6QcGDzoJGyz6ifpYPuoefIUey1hxvqeM4UsHRUC8cEymSCPmVSPFxDRNpuPIr6tBG8MczL_vTrT1oZNKYzmX_RWlRB2i7EieTmdBgblII7_WgiSuB0O_MrWKBmHULK34NJ8lyu2tg1mDh5x-tJp4oqKFEAcdI6SF0FB-NlP95gv6OWxHIkY_LE2xSjK2bIMQldYUPVd53mY2DH7WaSuudpkzTWMG3Al5PtC8yAC6GnntDcpkH7LIV7U-OUG9XVsOxWSVFJGQnlO38sPw6nCPKAhpUD_pJqVyXA1oABqzlU1nwMjeUEvKItgFzmqJyq33Xkm0DYqN20mKE3eSg80iRA8Gq_QkrQl1daJXQRZstbIZbPjSqXPlMUybgZ9zV6oY5_sLWwj-gN0xqZr9KYAfC4L0RuDH9JXzrQsv7wQkm6UypCue4SnCT-jOmoxrLeTg8-hzzFtBJrqNarA=s34-no?authuser=1" alt="">
                     </a>
                     <a href="https://github.com/dsm-DMS/">
-                        <img src="./assets/github.png" alt="">
+                        <img src="https://lh3.googleusercontent.com/42uiQq3yQf_Pi26vuL-0vi_IngUESzOpdbRE592NO3ZEx24AFknkNQ-BWywVkAvWIMwq8hOGAIt-zqE-DB9RC_EWGM0eaGNTs2hdeIsUQJkdqh5P_ustwUSvMsk6UzAb29YF9QsWeEWTC7na20XMzcBF9SuIdRqzW5K3v2WzJ59R2eBYO4sc6OP_fXvVpRRRz8-36RRrhwjLM1jiuVMjuULUvePj9lM91e9Lmd6knodNrSznbulxRmjJUzICyd73QG5S3ko-qXH7NrVKI-sl1tVB__ZelJaOq8edlnx0HlzpiKFoO10_lzkOYWj6Sa9J5hdQQy8QJUn_97EjGZxzn2X2ED_bZajIqIvuKsy7XQKGNnlgQzZTaejv0h7ub1m0CJxYk0vz-xuHxok-iyCjTGTP9WAnzufEa1ZZvpSeY8dPAr5PoBZcImziswvyNS3sANs8D0JYZ7JslMrGT7GchESdf-TAxreVaUvYo9mcqVk_lFtGJPmB-XU5KeMhK1aGjjuPUCMbsa1_ACP6AcmTNjeAV7QSMxZo_UGZyo1OWFmv9GPZOvT_9uxgNNKj3C0ktec-VfiiAiXF9CfmfdeZr6laICN26J0hTaLvbIyEOJvO1FVJ9VUHjeLl5SaD0a8qOP97KmL61BfyXjB30ujPBOld834Gj1FExAzRv5xe53jBbVfKATeQcYaM663YvV-p1_SKZcl0PUDS5PdCIroMRr4=s34-no?authuser=1" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+let date = new Date()
+
+let year = date.getFullYear();
+let month = date.getMonth() + 1
+let day = date.getDate();
+let day2 = date.getDate();
+let yoil = date.getDay();
+let menu_day = document.getElementById("menu-date");
+
+
+if(month < 10 ) {
+    month = "0" + month
+}
+
+if (day < 10) {
+    day = "0" + day
+}
+
+let realDate = year + "-" + month + "-" + day
+
+const meal_list = {
+    breakfast_list : document.getElementById('breakfast'),
+    lunch_list : document.getElementById('lunch'),
+    dinner_list : document.getElementById('dinner')
+}
+
+function load() {
+    fetch(`https://api.dsm-dms.com/meal/${realDate}`)
+    .then(res => res.json())
+    .then(res => {
+        const meal = res[realDate]
+        let breakfast = meal.breakfast
+        let lunch = meal.lunch
+        let dinner = meal.dinner
     
-    <script src="./dms.js"></script>
-    <script src="./api.js"></script>
+        console.log(breakfast, lunch, dinner)
+        
+        for(let i = 0; i< breakfast.length; i++) {
+            console.log(breakfast[i])
+            const list_breakfast = `
+                <li>${breakfast[i]}</li>
+            `;
+    
+            meal_list.breakfast_list.insertAdjacentHTML("beforeend", list_breakfast)
+        }
+        for(let i=0;i<lunch.length;i++){
+            const list_lunch = `<li>${lunch[i]}</li>`
+            meal_list.lunch_list.insertAdjacentHTML("beforeend", list_lunch)
+        }
+        for(let i=0;i<dinner.length;i++){
+            const list_dinner = `<li>${dinner[i]}</li>`
+            meal_list.dinner_list.insertAdjacentHTML("beforeend", list_dinner)
+        }
+    
+    })
+    
+
+}
+
+load()
+
+  function remove()  {
+    // 1. <ul> element 선택
+    const ul = document
+      .getElementById('breakfast');
+    
+    // 2. <li> 목록 선택
+    const items = ul.getElementsByTagName('li');
+  
+    // 3. <li> 목록 중 첫번째 item 삭제
+    while(items.length>0)  {
+      items[0].remove();
+    }
+
+    const ul1 = document
+      .getElementById('lunch');
+    
+    // 2. <li> 목록 선택
+    const items1 = ul1.getElementsByTagName('li');
+    
+    // 3. <li> 목록 중 첫번째 item 삭제
+    while(items1.length>0)  {
+      items1[0].remove();
+    }
+
+    const ul2 = document
+      .getElementById('dinner');
+    
+    // 2. <li> 목록 선택
+    const items2 = ul2.getElementsByTagName('li');
+    
+    // 3. <li> 목록 중 첫번째 item 삭제
+    while(items2.length>0)  {
+      items2[0].remove();
+    }
+
+}
+Printdate()
+function Printdate(){
+switch(yoil){
+    case 0:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 일요일');
+        break;
+    case 1:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 월요일');
+        break;
+    case 2:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 화요일');
+        break;
+    case 3:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 수요일');
+        break;
+    case 4:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 목요일');
+        break;
+    case 5:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 금요일');
+        break;
+    case 6:
+        document.getElementById("menu-date").innerHTML=(year+'년 '+month+'월 '+day2+'일 토요일');
+    }
+
+}
+function Yoilbf(){
+    if (yoil>0)
+    yoil--;
+    else
+    yoil=6;
+}
+function Yoilaf(){
+    if (yoil<6)
+    yoil++;
+    else
+    yoil=0;
+}
+
+function DateBefore(){
+
+    if (day2>1){
+        day2-=1;
+        console.log(day2)
+        if (day2<10)
+        realDate = year + "-" + month + "-" + ('0'+day2);
+        else
+        realDate = year + "-" + month + "-" + day2;
+        Yoilbf()
+        remove()
+        Printdate()
+        load()
+    }
+    else
+    alert("더이상 페이지를 넘길 수 없습니다.")
+}
+
+function DateAfter(){
+    if (day2<29){
+        day2+=1;
+        console.log(day2)
+        if (day2<10)
+        realDate = year + "-" + month + "-" + ('0'+day2);
+        else
+        realDate = year + "-" + month + "-" + day2;
+        Yoilaf()
+        Printdate()
+        remove()
+        load()
+
+    }
+    else
+    alert("더이상 페이지를 넘길 수 없습니다.")
+
+}
+let loginButton = document.getElementById('login-button')
+let loginModal = document.getElementById('login-modal')
+let loginWrapper = document.getElementById('login-wrapper')
+let close = document.getElementById('x')
+let body = document.getElementById('body_');
+
+function modalClickHandler(){
+    loginButton.addEventListener('click', () => {
+        loginModal.style.display = 'flex';
+        body.style.overflow = 'hidden';
+    })
+}
+
+function modalClose() {
+    close.addEventListener('click', () => {
+        loginModal.style.display = 'none';
+        body.style.overflow = 'auto';
+    })
+}
+
+let apply = document.getElementById('apply');
+let apply1 = document.getElementById("apply1");
+let applyImg = document.getElementById("apply-imgs")
+let apply2 = document.getElementById("apply2")
+let applyImg2 = document.getElementById("apply-img2")
+let apply3 = document.getElementById("apply3")
+let applyImg3 = document.getElementById("apply-img3")
+let apply4 = document.getElementById("apply4")
+let applyImg4 = document.getElementById("apply-img4")
+
+
+
+function onMouse1() { 
+    applyImg.style.display = 'block'
+    apply.style.backgroundImage = "url(https://lh3.googleusercontent.com/av6WoA_2Sj-KV0a5qXr3caNrn5VukwCOwSN7C4wCDZ46qTiPj0HaPmJFg0uu09kEWMSEG8Zo9PhxSFOivHs4ZXlPsVRtIfbq_M5twbTQszOKI-ry98w7xAtYD7Vvdd90sf0WhbK7ee3HY-O-J2hDlXpbgMYU4T2pRGzPe4SILlbi8m44l8Iuc07MOm5aPkOHTfUHjgEtkI3CCyPdi0fpq1-Wa6nO8pRmL5nFeWkBBsnmx4B9ScLgjUnRW87BRG2qd6J0GA6ktMUiydmh45OVcOM1O1ZQjxIlECBpSdWxoxMMEOOuEpl0uhhOnFcLQV8eLzdlAumhqZ690Zvey1hayFf9yGp4-rX0pgjW0XUQJ5Sar2jatBCGMoGaw8Ntsajw54bG3LGVFA0iJejb-0icTrhRk5v5EFxSYKxPzxu9qinOGiyktcRMZk-gKCsoFF83GsstclOq3mUeaGVM-2O5yBWBUG0eVctAvQ3PHSlkTlkWq5lIkjoK3bUXifLA8U6gJ00ldDpPZL7h2NstwRv00M69BDmH85CXBof8kFwS9GCfuZjh1DlAp39Ot6vZ0zWrceX4Wai4JsPAI0xiQbc1rIgviqwRWFDd7vEl_KMXQ_sz2TXP1ND24bUrQpuZEuUqtp_ldt83Kua9la0SYWLm2tcENn6hnFWgxhZ_S_CfWxgPQm0A3yAFRapQNjBOLUs9Ihyn5D9rie-x1vNRMmLH2Og=w1470-h690-no?authuser=1)"
+}
+
+function outMouse1() {
+   applyImg.style.display = 'none';
+   apply.style.backgroundImage = 'none'
+}
+
+function onMouse2() { 
+    applyImg2.style.display = 'block'
+    apply.style.backgroundImage = "url(https://lh3.googleusercontent.com/Fob6DFH1O03-yeq8HClrLD1IX2Ul0-bSFc3LcfBTcpmVg3-_qrAK09m9910PczxjboodipK3F0hkF7CjI1d3vF_ZIKoerJIZLcfk-zXFpB1k-py2Q-8LMetXFRqqgaCWJ8zfMVQF_Fyptu36GMaEx8ces4KnEMPkQt0K7bxV7TmH-2iS1osgPorHRcrv6lGE0lH_uI_kCqrQts78xeLtRK17QdgdVBCSGl1QY2QBC5tdoyM_QkPGzLG0Eq7SszHM_N8x5JOw7E_VtRw8-F6fsO7FAi62le4usyAw3dpbaam_e0YtlWyoZx2Uwzl9moy-uzXNmUaCfXYWGrt9dqLmkwlJyoqCJpDhAxDYmLq4f_X0Dxnyy8zS9-5REK0rrp2S56Qhs1gNRb458_Nsq33aND2YqApxHpgAI96HbZgVwGHlJIGb_kPSUjEDhD7tazshyC0Q3HKD6goqDtZmfxfFryXyBnH-am6J9HXUkqRvwDz8K3JiryuXSAHV4i8kkKkUZ7oY8QgmI-RD_Ap81r1WJ1Eh__RMd9UFfw7_qkw78FRK_D63Wi_Ev2gOMc5bDBxozvhin21kAYbwsBzctRG1bCwC13OdVKCqkTIMEloiZkOdS49G0WiOSdMxq4WoyXeIHzCwcyoYpJie6w8H4VmZKhm4myQDN99_UcvS0IfjbS7hnuxhebLvBkfwHiqMazfyIzrPVV8v2pw8NlutT7Qhs1E=w1470-h690-no?authuser=1)"
+}
+
+function outMouse2() {
+   applyImg2.style.display = 'none';
+   apply.style.backgroundImage = 'none'
+}
+
+function onMouse3() { 
+    applyImg3.style.display = 'block'
+    apply.style.backgroundImage = "url(https://lh3.googleusercontent.com/-ogOiiudKvw7QOb-Wvg-6AewoYM6e0yokRIJtYtOTD-xlZIk2QYt3-3oYLZT1PiPZ1XRI-mLTyzh71mqaKtf37sbkEE3Xabchz33URB7f-nT3h5hxOlTLaMyQt--qYk_7cNfa0R_d8OTExATMfng1whibGfM5Oybi5h08tvo0SliuTGHOrW2-ZoMHeQUGSj-RIqgt9tIZ18JrBzIxg1biNYZxGBPSwhLdc8yh-bFiwvEWXu78h7HGtw8PmwbyKcrjRZxuy1ZoVb0oxxOz40hraSEL7bv61LSfqBobJI1BWZBF3vmLQ7gWK40D4zql_K3YEiCB8jxLNoe24yPQ6M651E-YyiencD_rY8OrTfHSxX_c6NIvXDzlac8BpvIieCNpH7OMq-VLFoeHf3wFxptU-_5NFy18C20oiLX-OUP8j7Ghc5b1Xnwec5RkFx_hsS3bWU9xKrIDnvqVApcXWW5YX4svC_63LxGTSm8JyCClJ5m-sOuUtZZMXPYYsVVe1q2yX7KMuVsT_j7RUhwuyD6bZh2wTZz4fvIqs9puEj3cXeUbBgkV0PkyP4HgbWsVrES9sc93Gbqy5MM9OnbQBjsEOQsWCyoK32aGj_4HxKtjldcxmL0i1TONsDIqRAoAblyzNuhPvp5JYmlHiWpYUQmDNzdlk4M7wgl2PgsQdzi0lvBjDR_Gl8uIPAOWmowJ4oCRGEU5K8rF2NIroS1cyqbhdI=w1470-h690-no?authuser=1)"
+}
+
+function outMouse3() {
+   applyImg3.style.display = 'none';
+   apply.style.backgroundImage = 'none'
+}
+
+function onMouse4() { 
+    applyImg4.style.display = 'block'
+    apply.style.backgroundImage = "url(https://lh3.googleusercontent.com/GfYRbzb2i1qrZB6JNtu8xWs2lQnE6Jjane061bVfzzj7ufViueSWPlooJtiE30wYQj_WSgV-Z4uX3dl0qjht1pC3JNM6eSiQAlSxGZhHxGJOmWle66_NSSry50vHGveirZKdbozRPhYv6s_b4EBSONYFL03B7v2lvRJoSciZFZ1N5SItPq7f7kgjqM3A_S-6Di_tY6HHyXKVzg2BQJhvm60L0ccUPqYWC_Jm7fPDovzMaRBnVAzt1oV84BnOdvU6DwHbIngiSoW1_ZiSShpEG4LG7woZxudIGSJMnZ38FX8JNG3NoOa2Pmwgh0OlTLCfVTEexNW2g6DrjPxGjeSnFImHAwSPl53LquWlnZ1jkSrFV7x44wQsG4p6z96IRF8IBtPY6inrHHNMzqyctnj5_LNil1KnAnCWohYtj_9qvQQ-h2jlnUFCMrdPEggvscgbuUhog81HU5icLi-jC7YvjbDAKbXMX9misMv9O_PS5brj0rtM0es-Pbhv4sdqA4rffF0LRg6_YqsDBrnswHzvWPmW04FCZCMY8tofOqP2_fD-CqWRZ96NL9U1wihKf-f4pHntqhmQ6SAI8hbZAOvkSD4235OxiFozxnxPNm6jucNCdRTfKjJMGJXC-aJetYGItc1ZFgDyXEFc1WRLtScC4gyOLR-0XFIy-0PR3ECztEVeU8iiq8qrfamUHIGqVpmokOfdecxu4p8MJYdfLKVrzJ8=w1470-h690-no?authuser=1)"
+}
+
+function outMouse4() {
+   applyImg4.style.display = 'none';
+   apply.style.backgroundImage = 'none'
+}
+
+let back1 = document.getElementById("back-1")
+let back2 = document.getElementById("back-2")
+let back3 = document.getElementById("back-3")
+let back4 = document.getElementById("back-4")
+
+function backIn1(){
+    back1.style.display = 'block';
+}
+function backOut1(){
+    back1.style.display = 'none';
+}
+function backIn2(){
+    back2.style.display = 'flex';
+}
+function backOut2(){
+    back2.style.display = 'none';
+}
+function backIn3(){
+    back3.style.display = 'flex';
+}
+function backOut3(){
+    back3.style.display = 'none';
+}
+function backIn4(){
+    back4.style.display = 'flex';
+}
+function backOut4(){
+    back4.style.display = 'none';
+}
+</script>
 </body>
 </html>
