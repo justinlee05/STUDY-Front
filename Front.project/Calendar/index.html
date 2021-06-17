@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <table id="calendar">
+        <!-- 뒤에서 변수명을 주기 위해 아이디 생성-->
+          <thead>
+              <tr>
+              <td> <input type = "button" onclick="pastmonth()" value = "<"/> </td>
+              <td></td>
+              <td id="YM">year-month<td>
+              <td> <input type = "button" onclick="nextmonth()" value = ">"/> </td>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+              <td>일</td>
+              <td>월</td>
+              <td>화</td>
+              <td>수</td>
+              <td>목</td>
+              <td>금</td>
+              <td>토</td>
+              </tr>
+              <tr id="col1"></tr>
+              <tr id="col2"></tr>
+              <tr id="col3"></tr>
+              <tr id="col4"></tr>
+              <tr id="col5"></tr>
+              <tr id="col6"></tr>
+          </tbody>
+      </table>
+      <script src="./index.js"></script>
+    </body>
+</html>
