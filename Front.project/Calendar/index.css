@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+tbody{
+    background-color: chartreuse;
+}
+thead{
+}
+
+#to_day{
+    background-color: red;
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+td{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+
+    height: 20px;
+}
+
+#YM{
+    width: 100%;
+}
