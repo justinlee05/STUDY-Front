@@ -1,0 +1,241 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+#edit_modal_wrapper{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.705);
+
+}
+
+#edit_modal{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+}
+
+#edit_modal_title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    
+}
+
+#edit_modal_title span{
+    padding: 10px;
+
+}
+
+#edit_modal_body{
+    border-top: 2px solid rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(194, 194, 194);
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#edit_modal_body span{
+    padding: 10px;
+    font-size: 20px;
+}
+
+#edit_modal_body input{
+    margin:  10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#edit_modal_footer{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#edit_modal_footer button{
+    height: 30px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#delete_modal_wrapper{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.705);
+}
+
+#delete_modal{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+}
+
+#delete_modal_title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 198, 198);
+    
+}
+
+#delete_modal_title span{
+    padding: 10px;
+
+}
+
+#delete_modal_body{
+    border-top: 2px solid rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(194, 194, 194);
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+
+}
+
+#delete_modal_body span{
+    padding: 10px;
+    font-size: 20px;
+}
+
+#delete_modal_footer{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#delete_modal_footer button{
+    height: 30px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.activities input{
+    padding: 10px;
+}
+
+.activities p{
+    
+    transition: 0.5s;
+}
+
+body{
+    background-color: #f8b600;
+}
+
+h1{
+    color: #ffffff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header input{
+    border: none;
+    border: 4px solid #82dff0;
+    border-radius: 3px;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+
+.header input:focus {
+    border:4px solid #32ddfc;
+    outline: none;
+}
+
+.header button{
+    background-color: #ac79e7;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    width: 48px;
+    height: 48px;
+}
+
+.header button:active{
+    background-color: #55018d;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: 2px solid black;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    
+    background-color: rgb(231, 231, 231);
+}
+
+
+.activities{
+    border-bottom: 1px solid #95DE6A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    width: 90%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.activities div{
+    display: flex;
+    align-items: center;
+}
+
+#left input{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
