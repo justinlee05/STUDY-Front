@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 수정 모달창 -->
+    <div id="edit_modal_wrapper"> 
+        <div id="edit_modal">
+            <div id="edit_modal_title">
+                <span>수정</span>
+            </div>
+            <div id="edit_modal_body">
+                <span>수정할 정보를 입력해주세요</span>
+                <input type="text" id="Edit_input">
+            </div>
+            <div id="edit_modal_footer">
+                <button onclick="ConfigEdit()">config</button>
+                <button onclick="CancleEdit()">cancle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 삭제 모달창 -->
+    <div id="delete_modal_wrapper"> 
+        <div id="delete_modal">
+            <div id="delete_modal_title">
+                <span>아직 이 일을 마치지 못하셨습니다.</span>
+            </div>
+            <div id="delete_modal_body">
+                <span>정말 삭제하시겠습니까?</span>
+            </div>
+            <div id="delete_modal_footer">
+                <button onclick="ConfigDelete()">delete</button>
+                <button onclick="CancleDelete()">cancle</button>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Todo List</h1>
+    </div>
+    
+    <div class="header">
+        <input type="text" id="input" onkeyup="if(window.event.keyCode==13){upload()}">
+        <button id="button" onclick="upload()">+</button>
+    </div>
+    <div class="container">
+        <div class="body" id="body">
+            
+        </div>
+        <div class="activities" id="num">
+            <div id="left">
+                <input type="checkbox" onclick="Check()">
+                <p>할 일 추가하기</p>
+            </div>    
+            <div id="right">
+                <img src="./x.png" alt="" onclick="Delete()">
+                <img src="./edit.png" alt="" onclick="Edit()">
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
